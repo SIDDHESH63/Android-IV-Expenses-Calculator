@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name" />
+
+    <EditText
+        android:id="@+id/etExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etExpenseName"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_below="@id/etExpenseAmount"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/listExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddExpense"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: ₹0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/listExpenses"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
